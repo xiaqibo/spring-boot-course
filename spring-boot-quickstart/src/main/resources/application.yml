@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+#自定义配置，心情语录
+my:
+  mood:
+    today: 周末
+    content: 期待周末
+    author: "夏企博"
