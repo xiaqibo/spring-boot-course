@@ -18,6 +18,7 @@
 
     <modules>
         <module>spring-boot-quickstart</module>
+        <module>spring-boot-config</module>
     </modules>
 
     <properties>
@@ -25,6 +26,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -37,16 +39,20 @@
 			<scope>test</scope>
 		</dependency>
 
-<!--        配置热部署-->
+       <!-- 配置热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
 
-
-        
-	</dependencies>
+        <!--  lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

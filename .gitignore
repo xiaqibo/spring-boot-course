@@ -4,11 +4,14 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
 
+.DS_Store
+
 .idea/
+
+spring-boot-config/src/main/resources/aliyun-oss.properties
